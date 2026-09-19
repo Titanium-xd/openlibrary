@@ -49,7 +49,7 @@ class TestDockerCompose:
         """
         node-exporter should be configured identically in staging and production
         (aside from production's per-server 'profiles' field) so that the metrics
-        we collect are consistent across environments.
+        we collect are consistent across the environments.
         """
         with open(p("..", "compose.staging.yaml")) as f:
             staging_dc: dict = yaml.safe_load(f)
